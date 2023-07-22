@@ -19,7 +19,7 @@ export class LoginComponent {
   login()
   {
     if(this.loginForm.controls.username.value == 'ADMIN' &&
-    this.loginForm.controls.password.value == 'admin')
+    this.loginForm.controls.password.value == 'shiv.vani24')
     {
       this.route.navigate(['view']);
     }

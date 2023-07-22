@@ -19,4 +19,8 @@ export class CommonService {
   getStudentData(){
     return this.http.get<Students[]>(this.url);
   }
+
+  updateStudentData(updateForm: any){
+    return this.http.put(this.url + "/" + updateForm.id, updateForm);
+  }
 }

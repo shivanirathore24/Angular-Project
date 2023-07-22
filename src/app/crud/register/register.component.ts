@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { CommonService } from 'src/app/shared/common.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { CommonService } from 'src/app/shared/common.service';
 })
 export class RegisterComponent {
 
-  constructor(private service : CommonService) {}
+  constructor(private service : CommonService, private route: Router) {}
   regForm = new FormGroup({
     name : new FormControl(),
     username : new FormControl(),
@@ -19,5 +20,6 @@ register()
 {
   this.service.saveStudentData(this.regForm.value).subscribe();
   alert("Registered !")
+  this.route.navigate(['login'])
 }
 }

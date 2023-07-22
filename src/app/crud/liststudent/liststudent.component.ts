@@ -9,15 +9,14 @@ import { CommonService } from 'src/app/shared/common.service';
   styleUrls: ['./liststudent.component.css']
 })
 export class ListstudentComponent {
- student : Students[] = [];
+ students : Students[] = [];
 
  constructor(private service : CommonService) {}
 
  ngOnInit() : void {
    this.service.getStudentData().subscribe( (data : Students[]) => {
-      this.student = data;
-   }
-   )
+      this.students = data;
+   })
 }
 
 }
