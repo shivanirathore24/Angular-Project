@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Students } from 'src/app/model/students';
+import { CommonService } from 'src/app/shared/common.service';
+
 
 @Component({
   selector: 'app-liststudent',
@@ -6,5 +9,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./liststudent.component.css']
 })
 export class ListstudentComponent {
+ student : Students[] = [];
+
+ constructor(private service : CommonService) {}
+
+ ngOnInit() : void {
+   this.service.getStudentData().subscribe( (data : Students[]) => {
+      this.student = data;
+   }
+   )
+}
 
 }

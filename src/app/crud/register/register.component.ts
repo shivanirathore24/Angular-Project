@@ -17,7 +17,7 @@ export class RegisterComponent {
   })
 register()
 {
-  this.service.saveData(this.regForm.value).subscribe();
+  this.service.saveStudentData(this.regForm.value).subscribe();
   alert("Registered !")
 }
 }

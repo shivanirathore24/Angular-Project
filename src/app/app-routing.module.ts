@@ -4,6 +4,7 @@ import { HomeComponent } from './crud/home/home.component';
 import { LoginComponent } from './crud/login/login.component';
 import { RegisterComponent } from './crud/register/register.component';
 import { ErrorpageComponent } from './crud/errorpage/errorpage.component';
+import { ListstudentComponent } from './crud/liststudent/liststudent.component';
 
 const routes: Routes = [
   /* Path Redirect Bydefault */
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
+  {path: 'view', component: ListstudentComponent},
   /* WildCard Routing */
   {path:'**',component:ErrorpageComponent}
 ];

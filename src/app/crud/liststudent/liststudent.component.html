@@ -1,1 +1,26 @@
-<p>liststudent works!</p>
+<div class="container">
+    <h1 class="text-center">Student Data</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">USERNAME</th>
+                <th scope="col">PASSWORD</th>
+                <th scope="col">ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let s of student">
+                <td>{{s.id}}</td>
+                <td>{{s.name}}</td>
+                <td>{{s.username}}</td>
+                <td>{{s.password}}</td>
+                <td>
+                    <button type="button" class="btn btn-outline-warning" style="border:solid 2px black">EDIT</button>
+                    <button type="button" class="btn btn-outline-danger" style="border:solid 2px black">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

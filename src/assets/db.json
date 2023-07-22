@@ -4,19 +4,19 @@
       "name": "MS Dhoni",
       "username": "mahi77881@gmail.com",
       "password": "mahi@7781",
-      "id": 2
+      "id": 1
     },
     {
       "name": "Neeraj Chopra",
       "username": "neeraj.chopra24@gmail.com",
       "password": "jevlin@24$",
-      "id": 3
+      "id": 2
     },
     {
       "name": "Shivani Rathore",
       "username": "shivani.rathore24@gmail.com",
       "password": "sports@24$",
-      "id": 4
+      "id": 3
     }
   ]
 }
