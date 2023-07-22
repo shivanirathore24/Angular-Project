@@ -19,4 +19,9 @@ export class ListstudentComponent {
    })
 }
 
+deleteStudent(id: number)
+{
+  this.service.deleteStudentData(id).subscribe();
+  window.location.reload();
+}
 }

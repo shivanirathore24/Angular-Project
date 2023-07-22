@@ -23,4 +23,9 @@ export class CommonService {
   updateStudentData(updateForm: any){
     return this.http.put(this.url + "/" + updateForm.id, updateForm);
   }
+
+  deleteStudentData(id: number)
+  {
+    return this.http.delete(this.url+'/'+id);
+  }
 }
