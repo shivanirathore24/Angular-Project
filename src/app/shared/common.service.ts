@@ -8,7 +8,7 @@ import { Students } from '../model/students';
 export class CommonService {
 
   
-  url = " http://localhost:8080/students";
+  url = " http://localhost:3000/students";
   constructor(private http: HttpClient) { }
 
   saveStudentData(regForm : any)

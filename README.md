@@ -1,4 +1,4 @@
-# SMApp
+# Student Management Application
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
 
@@ -9,6 +9,25 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Output Screens:
+1. Student Registration : To commence the student registration process, simply click on "Registration." This action will automatically redirect you to the Admin Login Page.
+![Sample Screenshot](src/assets/image/studentRegistration.png)
+
+2. Admin Login : Administrators have the ability to access, modify, and remove student information within the system, providing them with comprehensive control over student records.
+![Sample Screenshot](src/assets/image/admin_login.png)
+
+3. View Student Details
+![Sample Screenshot](src/assets/image/view_studentDetails.png)
+
+4. Edit Student Data
+![Sample Screenshot](src/assets/image/edit_studentDetail.png)
+![Sample Screenshot](src/assets/image/edited_studentDetail.png)
+
+5. Delete Student Record
+![Sample Screenshot](src/assets/image/deleted_student.png)
+
+
 
 ## Build
 
